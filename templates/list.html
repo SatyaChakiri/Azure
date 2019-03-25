@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <img src='../static/images/Dhruvi.jpg' width="150" height="150"></center>
+    </head>
+    <body>
+        <div class="container">
+                <h1>hellooooo</h1>
+            <table class="table table-bordered">
+                            <tr>
+                                <th>Dhruvi Vyas</th>
+                                <th>1001516591</th>
+
+                            </tr>
+                 </table>
+        </div>
+        <div>
+            <table>
+          <thead>
+            <tr>
+              <th>TIME</th>
+              <th>LATITUDE</th>
+              <th>LONGITUDE</th>
+              <th>PLACE</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in ci %}
+            <tr>
+              <td>{{ r["time"] }}</td>
+              <td>{{ r["latitude"] }}</td>
+              <td>{{ r["longitude"] }}</td>
+              <td>{{ r["place"] }}</td>
+
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        </div></body></html>

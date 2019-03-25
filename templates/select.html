@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <img src='../static/images/Dhruvi.jpg' width="150" height="150"></center>
+    </head>
+    <body>
+        <div class="container">
+                <h1>hellooooo</h1>
+            <table class="table table-bordered">
+                            <tr>
+                                <th>Dhruvi Vyas</th>
+                                <th>1001516591</th>
+
+                            </tr>
+
+                 </table>
+<table class="table table-bordered">
+    <tr>
+        <th>
+        CabinNum
+    </th>
+        <th>
+            Fname
+        </th>
+        <th>Lname</th>
+        <th>Age</th>
+        <th>Survived</th>
+        <th>Lat</th>
+        <th>Long</th>
+        <th>PictureCap</th>
+        <th>PicturePas</th>
+        <th>Fare</th>
+      </tr>
+    <tbody>
+    {% for a in r %}
+
+    <tr>
+        <td>{{ a[0] }}</td>
+        <td>{{ a[1] }}</td>
+        <td>{{ a[2] }}</td>
+       <td>{{ a[3] }}</td>
+        <td>{{ a[4] }}</td>
+     <td>{{ a[5] }}</td>
+     <td>{{ a[6] }}</td>
+     <td>{{ a[7] }}  </td>
+     <td>{{ a[8] }}</td>
+     <td>{{ a[9] }}</td>
+
+
+    </tr>
+
+    {% endfor %}
+    <tr>
+        <td> <img src='../static/images/Dhruvi.jpg' width="150" height="150"></center></td>
+       <td><img src='../static/images/hm.jpg' width="150" height="150"></center></td>
+    </tr>
+    </tbody>
+</table>
